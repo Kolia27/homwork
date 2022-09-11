@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,italic,500,500italic,700,700italic,900,900italic&display=swap);
+@font-face {
+    font-family: Lato;
+    font-display: swap;
+    src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Lato;
+    font-display: swap;
+    src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Lato;
+    font-display: swap;
+    src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+body{
+    background: url(../img/image01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Lato;
+    font-size: 20px;
+    color: #000000;
+
+}
+/* -------------------------- */
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main {
+    flex: 1 1 auto;
+}
+[class*="__container"] {
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+/* ------------------------ */
+.header {
+    padding: 20px 0;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+}
+
+.header__titel {
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+/* ------------------------------------ */
+.main {
+    padding: 20px 0;
+}
+.about-mars__content{
+    margin-bottom: 20px;
+}
+.about-mars__content span{
+    color: rgb(108, 191, 108);
+    font-family: Roboto;
+}
+/* -------------------------------- */
+.about-mars__media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.media-about-mars__image{
+    width: 600px;
+}
+.media-about-mars__image img{
+    max-width: 100%;
+}
+/* --------------------------- */
+.about-mars__list li:not(:last-child) {
+    margin-bottom: 10px;
+}
+/* -------------------------------------- */
+.footer {
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__titel a {
+    font-weight: 800;
+    color: #921313;
+}
