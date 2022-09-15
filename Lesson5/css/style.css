@@ -38,7 +38,7 @@ body{
 .header__titel {
     font-family: Roboto, sans-serif;
     font-weight: 600;
-    font-style: 28px;
+    font-size: 28px;
     font-style: italic;
     text-align: center;
     text-decoration: underline;
