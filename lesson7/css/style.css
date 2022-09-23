@@ -168,4 +168,5 @@ body{
 }
 .pract__block1_scroll{
     background: url(../img/pract/image.jpg)no-repeat 0 0 / 200px auto, url(../img/pract/image01.jpg)no-repeat right top / auto 150px, url(../img/pract/image02.jpg)no-repeat right bottom / auto 150px, url(../img/pract/image03.jpg)no-repeat left bottom / auto 150px, url(../img/pract/image04.jpg)no-repeat center / auto 150px, rgba(76, 78, 83, 0.587);
+    padding-bottom: 40px;
 }
