@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+body{
+    font-family: 'Lato';
+    color: #424551;
+    line-height: 160%;
+}
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+[class*="__container"] {
+    max-width: 840px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+.header {
+    padding: 40px 0px 15px 0px;
+}
+.main {
+    padding: 10px 0px 14px 0px;
+}
+.footer {
+    margin-bottom: 30px;
+    padding: 10px 0px 20px 0px;
+}
+/* ----------------------------------------- */
+/* header */
+.header__container {}
+.header__titel {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+    max-width: 810px;
+}
+/* main */
+.about-text__container {
+
+}
+
+.about-text__icon {
+    display: flex;
+    margin-bottom: 40px;
+}
+@media (max-width: 479.98px) {
+    .about-text__icon {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+.icon-time {
+    flex: 1 1 auto;
+}
+
+.icon-time__block {
+    display: flex;
+}
+
+.icon-time-block {
+    padding-right: 5px;
+    align-items: center;
+}
+.icon-time-block__text{
+    color: #787A80;
+}
+.icon-time-block__text:not(:last-child){
+    margin-right: 25px;
+}
+/* ------------------------- */
+.backg-image{
+    background: url(../img/icon/image01.svg) no-repeat 0 center;
+    padding-left: 25px;
+}
+.backg-image_clock{
+    background: url(../img/icon/image02.svg) no-repeat 0 center;
+}
+/* --------------------------- */
+.icon-link {
+    display: flex;
+    align-items: center;
+}
+.icon-link > a{
+    display: inline-block;
+    height: 20px;
+}
+.icon-link > div, a:not(:last-child){
+    margin-right: 12px;
+}
+.icon-link__text {
+    font-weight: 700;
+    color: #1E212C;
+}
+.icon-link__face {
+}
+.icon-link__tw {
+}
+.icon-link__linked {
+}
+
+
+.about-text__image {
+    max-width: 810px;
+    margin-bottom: 60px;
+}
+.about-text__image img{
+    max-width: 100%;
+}
+
+.about-text__vulputate {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 25px;
+}
+
+.about-text__text p:not(:last-child){
+    margin-bottom: 36px;
+}
+.about-text__text{
+    margin-bottom: 48px;
+}
+
+.about-text__subtext {
+    padding-left: 58px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 48px;
+}
+
+.about-text__mauris {
+    margin-bottom: 24px;
+}
+
+.about-text__list li{
+
+}
+.about-text__list li{
+    background: url(../img/list/check.svg) no-repeat 0px 6px;
+    padding-left: 30px;
+}
+.about-text__list li:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+
+
+.footer__container {}
+
+.footer__text {}
+/* ---------------------------------- */
+.pract__block1:not(:last-child) {
+    margin-bottom: 30px;
+}
+.pract__block1{
+    min-height: 100px;
+    max-height: 600px;
+    padding: 20px;
+    background: url(../img/pract/main.jpg) no-repeat center / 300px auto fixed;
+}
+.pract__block1 p{
+    opacity: 0.5;
+}
+.pract__block1_scroll{
+    background: url(../img/pract/image.jpg)no-repeat 0 0 / 200px auto, url(../img/pract/image01.jpg)no-repeat right top / auto 150px, url(../img/pract/image02.jpg)no-repeat right bottom / auto 150px, url(../img/pract/image03.jpg)no-repeat left bottom / auto 150px, url(../img/pract/image04.jpg)no-repeat center / auto 150px, rgba(76, 78, 83, 0.587);
+}
