@@ -1,0 +1,64 @@
+.wrapper{
+	/* overflow: hidden; */
+	min-height: 100%;
+	position: relative;
+}
+
+
+body{
+}
+
+.car {
+    position: relative;
+    z-index: 60;
+}
+.car__container {
+    position: relative;
+    margin: 0 auto;
+}
+/* --------------------------------------------------------------- */
+.block-image{
+}
+.block-image__image {
+    text-align: center;
+    position: relative;
+    z-index: 35;
+    max-width: 800px;
+}
+.block-image__image::before, .block-image__image::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 110px;
+    height: 110px;
+    background: url(../img/wheel.svg)no-repeat;
+    transition: transform 6.5s ease-in-out 0s;
+}
+
+.block-image__image::before{
+    top: 290px;
+    left: 120px;
+}
+.block-image__image::after{
+    bottom: 200px;
+    right: 120px;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+.car__background{
+    position: absolute;
+    width: 10000px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: all 8s ease 0s;
+}
+
+/* --------------------------------------- */
+.car:hover .block-image__image::before, .car:hover .block-image__image::after{
+    transform: rotate(360deg);
+}
+.car:hover .car__background{
+    transform: translate(-6800px, 0);
+}
