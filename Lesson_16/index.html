@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 16</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header"></header>
+			<main class="page">
+                <section class="questions">
+                    <div class="questions__container">
+                        <div class="question__image">
+                            <img src="img/image.svg" alt="peopel">
+                        </div>
+                        <div class="question__body">
+                            <div class="questions__category">Any questions?</div>
+                            <div class="questions__titel">Drop us a line</div>
+                            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="questions__form">
+                               <div class="form">
+                                    <div class="form__line">
+                                        <label for="first-name" class="form__label">First Name*</label>
+                                        <input id="first-name" required type="text" name="first-name" placeholder="Your first name" class="form__input">
+                                    </div>
+                                    <div class="form__line">
+                                        <label for="last-name" class="form__label">Last Name*</label>
+                                        <input id="last-name" required type="text" name="last-name" placeholder="Your first name" class="form__input">
+                                    </div>
+                                    <div class="form__line">
+                                        <label for="email" class="form__label">Email*</label>
+                                        <input id="email" required type="email" name="email" placeholder="Your working email" class="form__input">
+                                    </div>
+                                    <div class="form__line">
+                                        <label for="tel-01" class="form__label">Phone</label>
+                                        <input id="tel-01" type="tel" name="phone" placeholder="Your phone number" class="form__input">
+                                    </div>
+                                    <div class="form__line">
+                                        <label for="mes" class="form__label">Message*</label>
+                                        <textarea id="mes" required type="text" name="message" placeholder="Your message" class="form__input form__input_height"></textarea>
+                                    </div>
+                               </div>
+                                <div class="questions__form-line">
+                                    <div class="checkbox">
+                                        <input id="agree" required autocomplete="off" type="checkbox" name="agree" class="checkbox__input">
+                                        <label for="agree" class="checkbox__label"><span class="checkbox__text">I agree to receive communications from Createx Online School</span></label>
+                                    </div>
+                                    <button class="questions__button" type="submit">Send message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <div class="pract">
+                    <div class="pract__container">
+                       <form action="#" method="get" class="pract-form">
+                            <div class="pract-form__radio">
+                                <input checked class="pract-form__input" id="pet-01" required autocomplete="off" value="cat" name="pet"
+                                    type="radio">
+                                <label class="pract-form__label" for="pet-01">Кішка</label>
+                            </div>
+                            <div class="pract-form__radio">
+                                <input class="pract-form__input" id="pet-02" required autocomplete="off" name="pet" value="dog"
+                                    type="radio">
+                                <label class="pract-form__label" for="pet-02">Собака</label>
+                            </div>
+                       </form>
+                    </div>
+                </div>
+            </main>
+			<footer class="footer"></footer>
+		</div>
+	</body>
+</html>
